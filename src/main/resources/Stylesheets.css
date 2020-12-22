@@ -1,0 +1,10 @@
+
+ .textMsg {
+     -fx-padding: 0 19;
+     -fx-background-color: transparent, white, transparent,white;
+     -fx-background-insets: 0, 6, 0;
+     -fx-background-radius: 8em;
+     -fx-font-size: 18px;
+ }
+
+

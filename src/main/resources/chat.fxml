@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChatController">
+    <MenuBar style="-fx-background-color: linear-gradient(to left, #4e535d, #4f666e)" VBox.vgrow="NEVER">
+        <Menu mnemonicParsing="false" text="File">
+            <MenuItem mnemonicParsing="false" onAction="#quit" text="Quit" />
+        </Menu>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="600.0" prefWidth="800.0"
+                style="-fx-background-color: linear-gradient(to left, #4e535d, #4f666e);"
+                stylesheets="@Stylesheets.css" VBox.vgrow="ALWAYS">
+        <TextArea fx:id="output" editable="false" focusTraversable="false" layoutX="14.0" layoutY="14.0" prefHeight="500.0" prefWidth="775.0">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <font>
+                <Font name="Arial Rounded MT Bold" size="19.0" />
+            </font>
+        </TextArea>
+        <TextField fx:id="input" layoutX="14.0" layoutY="525.0" onAction="#send" prefHeight="44.0" prefWidth="679.0"
+                   promptText="Type your message" styleClass="textMsg">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <Button focusTraversable="false" layoutX="701.0" layoutY="525.0" mnemonicParsing="false" onAction="#send" prefHeight="44.0"
+                prefWidth="88.0" style="-fx-background-color: #208fe5;" text="SEND" textFill="#f6fcff">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="19.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+    </AnchorPane>
+</VBox>
